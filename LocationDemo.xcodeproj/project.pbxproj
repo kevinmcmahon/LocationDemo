@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A509F87155A9CC400D6F3F5 /* MapViewController.m */; };
+		0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */; };
+		0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */; };
 		0AED20DC155A99B900BBDAB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DB155A99B900BBDAB4 /* UIKit.framework */; };
 		0AED20DE155A99B900BBDAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DD155A99B900BBDAB4 /* Foundation.framework */; };
 		0AED20E0155A99B900BBDAB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DF155A99B900BBDAB4 /* CoreGraphics.framework */; };
@@ -31,22 +34,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A509F86155A9CC400D6F3F5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0A509F87155A9CC400D6F3F5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A52D3D0155DB33A00FE27DF /* MilleniumPark.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MilleniumPark.gpx; path = GPX/MilleniumPark.gpx; sourceTree = "<group>"; };
+		0A86A42E1561472200435C0D /* Chicago.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Chicago.gpx; sourceTree = "<group>"; };
 		0AED20D7155A99B900BBDAB4 /* LocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED20DB155A99B900BBDAB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AED20DD155A99B900BBDAB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0AED20DF155A99B900BBDAB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0AED20E3155A99B900BBDAB4 /* LocationDemo-Info.plist */ = {isa = PBXFileReference; path = "LocationDemo-Info.plist"; sourceTree = "<group>"; };
+		0AED20E3155A99B900BBDAB4 /* LocationDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationDemo-Info.plist"; sourceTree = "<group>"; };
 		0AED20E5155A99B900BBDAB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AED20E7155A99B900BBDAB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AED20E9155A99B900BBDAB4 /* LocationDemo-Prefix.pch */ = {isa = PBXFileReference; path = "LocationDemo-Prefix.pch"; sourceTree = "<group>"; };
-		0AED20EA155A99B900BBDAB4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AED20E9155A99B900BBDAB4 /* LocationDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0AED20EA155A99B900BBDAB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AED20EB155A99B900BBDAB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0AED20F2155A99B900BBDAB4 /* LocationDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0AED20FB155A99B900BBDAB4 /* LocationDemoTests-Info.plist */ = {isa = PBXFileReference; path = "LocationDemoTests-Info.plist"; sourceTree = "<group>"; };
+		0AED20FB155A99B900BBDAB4 /* LocationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationDemoTests-Info.plist"; sourceTree = "<group>"; };
 		0AED20FD155A99B900BBDAB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0AED20FF155A99B900BBDAB4 /* LocationDemoTests.h */ = {isa = PBXFileReference; path = LocationDemoTests.h; sourceTree = "<group>"; };
+		0AED20FF155A99B900BBDAB4 /* LocationDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationDemoTests.h; sourceTree = "<group>"; };
 		0AED2100155A99B900BBDAB4 /* LocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationDemoTests.m; sourceTree = "<group>"; };
+		0AED210A155A99E900BBDAB4 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */,
+				0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */,
 				0AED20DC155A99B900BBDAB4 /* UIKit.framework in Frameworks */,
 				0AED20DE155A99B900BBDAB4 /* Foundation.framework in Frameworks */,
 				0AED20E0155A99B900BBDAB4 /* CoreGraphics.framework in Frameworks */,
@@ -73,9 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A86A42B156137C400435C0D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0A86A42D1561470900435C0D /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				0A52D3D0155DB33A00FE27DF /* MilleniumPark.gpx */,
+				0A86A42E1561472200435C0D /* Chicago.gpx */,
+			);
+			name = GPX;
+			sourceTree = "<group>";
+		};
 		0AED20CC155A99B900BBDAB4 = {
 			isa = PBXGroup;
 			children = (
+				0A86A42D1561470900435C0D /* GPX */,
+				0A86A42B156137C400435C0D /* Images */,
 				0AED20E1155A99B900BBDAB4 /* LocationDemo */,
 				0AED20F9155A99B900BBDAB4 /* LocationDemoTests */,
 				0AED20DA155A99B900BBDAB4 /* Frameworks */,
@@ -95,6 +125,8 @@
 		0AED20DA155A99B900BBDAB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */,
+				0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */,
 				0AED20DB155A99B900BBDAB4 /* UIKit.framework */,
 				0AED20DD155A99B900BBDAB4 /* Foundation.framework */,
 				0AED20DF155A99B900BBDAB4 /* CoreGraphics.framework */,
@@ -109,6 +141,9 @@
 				0AED20EA155A99B900BBDAB4 /* AppDelegate.h */,
 				0AED20EB155A99B900BBDAB4 /* AppDelegate.m */,
 				0AED20E2155A99B900BBDAB4 /* Supporting Files */,
+				0AED210A155A99E900BBDAB4 /* Macros.h */,
+				0A509F86155A9CC400D6F3F5 /* MapViewController.h */,
+				0A509F87155A9CC400D6F3F5 /* MapViewController.m */,
 			);
 			path = LocationDemo;
 			sourceTree = "<group>";
@@ -250,6 +285,7 @@
 			files = (
 				0AED20E8155A99B900BBDAB4 /* main.m in Sources */,
 				0AED20EC155A99B900BBDAB4 /* AppDelegate.m in Sources */,
+				0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +447,7 @@
 				0AED2106155A99B900BBDAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AED2107155A99B900BBDAB4 /* Build configuration list for PBXNativeTarget "LocationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +456,7 @@
 				0AED2109155A99B900BBDAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

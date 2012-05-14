@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
 
@@ -16,7 +17,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+
+    MapViewController *mvc = [[MapViewController alloc] init];
+    [self.window addSubview:mvc.view];
     [self.window makeKeyAndVisible];
     return YES;
 }
