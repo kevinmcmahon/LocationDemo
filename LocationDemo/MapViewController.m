@@ -16,73 +16,98 @@
 
 @synthesize mapView = _mapView;
 
-- (id)init {
+static int METERS_PER_MILE = 1609;
+
+- (id) init {
     self = [super init];
-    if (self) {
-        [self initialize];
+    if(self) {
+       [self initialize];
     }
     return self;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self initialize];
+       [self initialize];
     }
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+- (id) initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self initialize];
     }
-    return self;
+    return self;    
 }
 
-- (void)initialize {
+- (void) initialize {
     // Do Init
-    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 360)];
+    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320 , 360)];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
     [self.view addSubview:self.mapView];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (void) viewWillAppear:(BOOL)animated {
+
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = 41.88209;
+    zoomLocation.longitude = -87.62784;
+    
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+    
+    MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:viewRegion];                
+
+    [self.mapView setRegion:adjustedRegion animated:YES];
+    [self.mapView setShowsUserLocation:YES];
+    
+    
+    CLRegion *region = [[CLRegion alloc] initCircularRegionWithCenter:    CLLocationCoordinate2DMake(41.882664, -87.623291) radius:200.0 identifier:@"Cloud Gate"];
+    
+    [[self locationManager] startUpdatingLocation];
+    [[self locationManager] startMonitoringForRegion:region];
 }
 
-- (void)viewDidUnload {
+- (void)viewDidUnload
+{
     [super viewDidUnload];
     self.mapView = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (CLLocationManager *)locationManager {
+    
+    if (_locationManager != nil) {
+        return _locationManager;
+    }
+    
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.purpose = @"Get notifications when you are near attractions.";
+    _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+    _locationManager.delegate = self;
+    
+    return _locationManager;
+}
+
+
 #pragma CLLocationManagerDelegate Methods
 
-- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+-(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
     LogDebug(@"Entered Region - %@", region.identifier);
 }
 
-- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
-    LogDebug(@"Exited Region - %@", region.identifier);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
-    LogDebug(@"%@ Registered.", region.identifier);
-}
-
-- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-    LogDebug(@"Location manager failed with an error\n%@", [error localizedDescription]);
-}
-
--(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-    LogDebug(@"location updated");
+-(void) locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
+    LogDebug(@"%@ Region Registered.", region.identifier);
 }
 @end
