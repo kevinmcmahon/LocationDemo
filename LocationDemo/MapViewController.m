@@ -7,6 +7,7 @@
 //
 
 #import "MapViewController.h"
+#import "RMMapBoxSource.h"
 
 @interface MapViewController ()
 
@@ -44,7 +45,9 @@ static int METERS_PER_MILE = 1609;
 
 - (void)initialize {
     // Do Init
-    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(10, 10, 300, 360)];
+    _mapView = [[RMMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 400) andTilesource:[[RMMapBoxSource alloc] initWithReferenceURL:[NSURL URLWithString:@"http://a.tiles.mapbox.com/v3/kevinmcmahon.map-ceoj9351.jsonp"]] centerCoordinate:CLLocationCoordinate2DMake(41.88209,-87.62784) zoomLevel:15 maxZoomLevel:17 minZoomLevel:14 backgroundImage:[UIImage imageNamed:@"background"]];
+    _mapView.adjustTilesForRetinaDisplay = YES;
+    
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.distanceFilter = 50.0;
     _locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
@@ -54,7 +57,6 @@ static int METERS_PER_MILE = 1609;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
-    [self.mapView setDelegate:self];
     [self.view addSubview:self.mapView];
 
     if ([CLLocationManager locationServicesEnabled]) {
@@ -64,7 +66,6 @@ static int METERS_PER_MILE = 1609;
         [_locationManager startMonitoringForRegion:region];
         [_locationManager startUpdatingLocation];
     }
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -74,14 +75,14 @@ static int METERS_PER_MILE = 1609;
     zoomLocation.latitude = 41.88209;
     zoomLocation.longitude = -87.62784;
 
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation,
-            0.5 * METERS_PER_MILE,
-            0.5 * METERS_PER_MILE);
-
-    MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:viewRegion];
-
-    [self.mapView setRegion:adjustedRegion animated:YES];
-    [self.mapView setShowsUserLocation:YES];
+//    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation,
+//            0.5 * METERS_PER_MILE,
+//            0.5 * METERS_PER_MILE);
+//
+//    MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:viewRegion];
+//
+//    [self.mapView setRegion:adjustedRegion animated:YES];
+//    [self.mapView setShowsUserLocation:YES];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

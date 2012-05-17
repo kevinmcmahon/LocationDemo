@@ -1,0 +1,3 @@
+[submodule "Vendor/mapbox-ios-sdk"]
+	path = Vendor/mapbox-ios-sdk
+	url = git://github.com/mapbox/mapbox-ios-sdk.git
