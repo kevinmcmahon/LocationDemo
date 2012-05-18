@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A23A29F15658CA200B32392 /* KMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A29E15658CA200B32392 /* KMMapView.m */; };
 		0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A509F87155A9CC400D6F3F5 /* MapViewController.m */; };
 		0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */; };
 		0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */; };
@@ -14,6 +15,9 @@
 		0A5A8B1B15640332003AC9BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1915640331003AC9BF /* libsqlite3.dylib */; };
 		0A5A8B1C15640332003AC9BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1A15640331003AC9BF /* QuartzCore.framework */; };
 		0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1D15640337003AC9BF /* libz.dylib */; };
+		0A5A8B2C15652BC1003AC9BF /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */; };
+		0A5A8B2D15652BC1003AC9BF /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */; };
+		0A5A8B3015654A5F003AC9BF /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2F15654A5F003AC9BF /* LocationManager.m */; };
 		0A86A4301561498400435C0D /* Chicago.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A86A42F1561498400435C0D /* Chicago.gpx */; };
 		0AC8C64D1563572900E64403 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64B1563572900E64403 /* background.png */; };
 		0AC8C64E1563572900E64403 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64C1563572900E64403 /* background@2x.png */; };
@@ -62,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A23A29C156586D000B32392 /* ChicagoHome.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ChicagoHome.gpx; sourceTree = "<group>"; };
+		0A23A29D15658CA200B32392 /* KMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMapView.h; sourceTree = "<group>"; };
+		0A23A29E15658CA200B32392 /* KMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMapView.m; sourceTree = "<group>"; };
 		0A509F86155A9CC400D6F3F5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0A509F87155A9CC400D6F3F5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -71,6 +78,10 @@
 		0A5A8B1915640331003AC9BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0A5A8B1A15640331003AC9BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A5A8B1D15640337003AC9BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrackingDot.png; path = LocationDemo/Images/TrackingDot.png; sourceTree = "<group>"; };
+		0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TrackingDot@2x.png"; path = "LocationDemo/Images/TrackingDot@2x.png"; sourceTree = "<group>"; };
+		0A5A8B2E15654A5F003AC9BF /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		0A5A8B2F15654A5F003AC9BF /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		0A86A42F1561498400435C0D /* Chicago.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Chicago.gpx; path = GPX/Chicago.gpx; sourceTree = "<group>"; };
 		0AC8C64B1563572900E64403 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = LocationDemo/Images/background.png; sourceTree = "<group>"; };
 		0AC8C64C1563572900E64403 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "LocationDemo/Images/background@2x.png"; sourceTree = "<group>"; };
@@ -135,6 +146,8 @@
 		0A86A42B156137C400435C0D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */,
+				0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */,
 				0AC8C64B1563572900E64403 /* background.png */,
 				0AC8C64C1563572900E64403 /* background@2x.png */,
 			);
@@ -146,6 +159,7 @@
 			children = (
 				0A52D3D0155DB33A00FE27DF /* MilleniumPark.gpx */,
 				0A86A42F1561498400435C0D /* Chicago.gpx */,
+				0A23A29C156586D000B32392 /* ChicagoHome.gpx */,
 			);
 			name = GPX;
 			sourceTree = "<group>";
@@ -197,6 +211,10 @@
 				0AED210A155A99E900BBDAB4 /* Macros.h */,
 				0A509F86155A9CC400D6F3F5 /* MapViewController.h */,
 				0A509F87155A9CC400D6F3F5 /* MapViewController.m */,
+				0A5A8B2E15654A5F003AC9BF /* LocationManager.h */,
+				0A5A8B2F15654A5F003AC9BF /* LocationManager.m */,
+				0A23A29D15658CA200B32392 /* KMMapView.h */,
+				0A23A29E15658CA200B32392 /* KMMapView.m */,
 			);
 			path = LocationDemo;
 			sourceTree = "<group>";
@@ -329,6 +347,8 @@
 				0A86A4301561498400435C0D /* Chicago.gpx in Resources */,
 				0AC8C64D1563572900E64403 /* background.png in Resources */,
 				0AC8C64E1563572900E64403 /* background@2x.png in Resources */,
+				0A5A8B2C15652BC1003AC9BF /* TrackingDot.png in Resources */,
+				0A5A8B2D15652BC1003AC9BF /* TrackingDot@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +386,8 @@
 				0AED20E8155A99B900BBDAB4 /* main.m in Sources */,
 				0AED20EC155A99B900BBDAB4 /* AppDelegate.m in Sources */,
 				0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */,
+				0A5A8B3015654A5F003AC9BF /* LocationManager.m in Sources */,
+				0A23A29F15658CA200B32392 /* KMMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

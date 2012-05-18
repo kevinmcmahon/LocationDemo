@@ -8,26 +8,53 @@
 
 #import "AppDelegate.h"
 #import "MapViewController.h"
+#import "LocationManager.h"
 
 @implementation AppDelegate {
     MapViewController *mvc;
+    LocationManager *locationManager;
 }
 
 @synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     if (getenv("NSZombieEnabled"))
         NSLog(@"NSZombieEnabled!");
     else if (getenv("NSAutoreleaseFreedObjectCheckEnabled"))
         NSLog(@"NSAutoreleaseFreedObjectCheckEnabled enabled!");
-
+    LogDebug(@"Scale : %f",[[UIScreen mainScreen] scale]);
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
+    [self initLocationManager];
+    
     mvc = [[MapViewController alloc] init];
     [self.window addSubview:mvc.view];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)initLocationManager {
+    
+    if ([CLLocationManager locationServicesEnabled]) {
+        LogDebug(@"Location services enabled.");
+        locationManager = [[LocationManager alloc] init];
+        if(CLLocationManager.regionMonitoringAvailable && CLLocationManager.regionMonitoringEnabled) {
+            LogDebug(@"Region monitoring available and enabled.");
+            [self registerRegions];
+        }
+        [locationManager startUpdatingLocation];
+    }
+}
+
+-(void)registerRegions {
+    CLLocationCoordinate2D theBean = CLLocationCoordinate2DMake(41.882669, -87.623297);
+    CLRegion *beanRegion = [[CLRegion alloc] initCircularRegionWithCenter:theBean radius:20.0 identifier:@"Cloud Gate"];
+    [locationManager startMonitoringForRegion:beanRegion];
+    
+    CLLocationCoordinate2D theFountain = CLLocationCoordinate2DMake(41.88148, -87.62373);
+    CLRegion *fountainRegion = [[CLRegion alloc] initCircularRegionWithCenter:theFountain radius:100.0 identifier:@"Crown Fountain"];
+    [locationManager startMonitoringForRegion:fountainRegion];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
