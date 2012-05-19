@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2162B51567709D001F88C6 /* Icon@2x.png */; };
+		0A2162B8156770AF001F88C6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2162B7156770AF001F88C6 /* Icon.png */; };
 		0A23A29F15658CA200B32392 /* KMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A29E15658CA200B32392 /* KMMapView.m */; };
 		0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A509F87155A9CC400D6F3F5 /* MapViewController.m */; };
 		0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */; };
@@ -17,7 +19,8 @@
 		0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1D15640337003AC9BF /* libz.dylib */; };
 		0A5A8B2C15652BC1003AC9BF /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */; };
 		0A5A8B2D15652BC1003AC9BF /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */; };
-		0A5A8B3015654A5F003AC9BF /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2F15654A5F003AC9BF /* LocationManager.m */; };
+		0A7C7F5D1565F67B00A9017A /* ChicagoHome.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */; };
+		0A7C7F5F1565F80F00A9017A /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C7F5E1565F80F00A9017A /* loading.png */; };
 		0A86A4301561498400435C0D /* Chicago.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A86A42F1561498400435C0D /* Chicago.gpx */; };
 		0AC8C64D1563572900E64403 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64B1563572900E64403 /* background.png */; };
 		0AC8C64E1563572900E64403 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64C1563572900E64403 /* background@2x.png */; };
@@ -30,8 +33,6 @@
 		0AED20F4155A99B900BBDAB4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */; };
 		0AED20F5155A99B900BBDAB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DB155A99B900BBDAB4 /* UIKit.framework */; };
 		0AED20F6155A99B900BBDAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DD155A99B900BBDAB4 /* Foundation.framework */; };
-		0AED20FE155A99B900BBDAB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AED20FC155A99B900BBDAB4 /* InfoPlist.strings */; };
-		0AED2101155A99B900BBDAB4 /* LocationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AED2100155A99B900BBDAB4 /* LocationDemoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A23A29C156586D000B32392 /* ChicagoHome.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ChicagoHome.gpx; sourceTree = "<group>"; };
+		0A2162B51567709D001F88C6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		0A2162B7156770AF001F88C6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		0A23A29D15658CA200B32392 /* KMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMapView.h; sourceTree = "<group>"; };
 		0A23A29E15658CA200B32392 /* KMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMapView.m; sourceTree = "<group>"; };
 		0A509F86155A9CC400D6F3F5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -80,8 +82,8 @@
 		0A5A8B1D15640337003AC9BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrackingDot.png; path = LocationDemo/Images/TrackingDot.png; sourceTree = "<group>"; };
 		0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TrackingDot@2x.png"; path = "LocationDemo/Images/TrackingDot@2x.png"; sourceTree = "<group>"; };
-		0A5A8B2E15654A5F003AC9BF /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		0A5A8B2F15654A5F003AC9BF /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ChicagoHome.gpx; path = GPX/ChicagoHome.gpx; sourceTree = "<group>"; };
+		0A7C7F5E1565F80F00A9017A /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = LocationDemo/Images/loading.png; sourceTree = "<group>"; };
 		0A86A42F1561498400435C0D /* Chicago.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Chicago.gpx; path = GPX/Chicago.gpx; sourceTree = "<group>"; };
 		0AC8C64B1563572900E64403 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = LocationDemo/Images/background.png; sourceTree = "<group>"; };
 		0AC8C64C1563572900E64403 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "LocationDemo/Images/background@2x.png"; sourceTree = "<group>"; };
@@ -97,10 +99,6 @@
 		0AED20EB155A99B900BBDAB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0AED20F2155A99B900BBDAB4 /* LocationDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		0AED20FB155A99B900BBDAB4 /* LocationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationDemoTests-Info.plist"; sourceTree = "<group>"; };
-		0AED20FD155A99B900BBDAB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0AED20FF155A99B900BBDAB4 /* LocationDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationDemoTests.h; sourceTree = "<group>"; };
-		0AED2100155A99B900BBDAB4 /* LocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationDemoTests.m; sourceTree = "<group>"; };
 		0AED210A155A99E900BBDAB4 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +144,7 @@
 		0A86A42B156137C400435C0D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A7C7F5E1565F80F00A9017A /* loading.png */,
 				0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */,
 				0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */,
 				0AC8C64B1563572900E64403 /* background.png */,
@@ -157,9 +156,9 @@
 		0A86A42D1561470900435C0D /* GPX */ = {
 			isa = PBXGroup;
 			children = (
+				0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */,
 				0A52D3D0155DB33A00FE27DF /* MilleniumPark.gpx */,
 				0A86A42F1561498400435C0D /* Chicago.gpx */,
-				0A23A29C156586D000B32392 /* ChicagoHome.gpx */,
 			);
 			name = GPX;
 			sourceTree = "<group>";
@@ -167,11 +166,12 @@
 		0AED20CC155A99B900BBDAB4 = {
 			isa = PBXGroup;
 			children = (
+				0A2162B7156770AF001F88C6 /* Icon.png */,
+				0A2162B51567709D001F88C6 /* Icon@2x.png */,
 				0A5A8B0115640315003AC9BF /* MapView.xcodeproj */,
 				0A86A42D1561470900435C0D /* GPX */,
 				0A86A42B156137C400435C0D /* Images */,
 				0AED20E1155A99B900BBDAB4 /* LocationDemo */,
-				0AED20F9155A99B900BBDAB4 /* LocationDemoTests */,
 				0AED20DA155A99B900BBDAB4 /* Frameworks */,
 				0AED20D8155A99B900BBDAB4 /* Products */,
 			);
@@ -211,8 +211,6 @@
 				0AED210A155A99E900BBDAB4 /* Macros.h */,
 				0A509F86155A9CC400D6F3F5 /* MapViewController.h */,
 				0A509F87155A9CC400D6F3F5 /* MapViewController.m */,
-				0A5A8B2E15654A5F003AC9BF /* LocationManager.h */,
-				0A5A8B2F15654A5F003AC9BF /* LocationManager.m */,
 				0A23A29D15658CA200B32392 /* KMMapView.h */,
 				0A23A29E15658CA200B32392 /* KMMapView.m */,
 			);
@@ -226,25 +224,6 @@
 				0AED20E4155A99B900BBDAB4 /* InfoPlist.strings */,
 				0AED20E7155A99B900BBDAB4 /* main.m */,
 				0AED20E9155A99B900BBDAB4 /* LocationDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0AED20F9155A99B900BBDAB4 /* LocationDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				0AED20FF155A99B900BBDAB4 /* LocationDemoTests.h */,
-				0AED2100155A99B900BBDAB4 /* LocationDemoTests.m */,
-				0AED20FA155A99B900BBDAB4 /* Supporting Files */,
-			);
-			path = LocationDemoTests;
-			sourceTree = "<group>";
-		};
-		0AED20FA155A99B900BBDAB4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0AED20FB155A99B900BBDAB4 /* LocationDemoTests-Info.plist */,
-				0AED20FC155A99B900BBDAB4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -349,6 +328,10 @@
 				0AC8C64E1563572900E64403 /* background@2x.png in Resources */,
 				0A5A8B2C15652BC1003AC9BF /* TrackingDot.png in Resources */,
 				0A5A8B2D15652BC1003AC9BF /* TrackingDot@2x.png in Resources */,
+				0A7C7F5D1565F67B00A9017A /* ChicagoHome.gpx in Resources */,
+				0A7C7F5F1565F80F00A9017A /* loading.png in Resources */,
+				0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */,
+				0A2162B8156770AF001F88C6 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AED20FE155A99B900BBDAB4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +368,6 @@
 				0AED20E8155A99B900BBDAB4 /* main.m in Sources */,
 				0AED20EC155A99B900BBDAB4 /* AppDelegate.m in Sources */,
 				0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */,
-				0A5A8B3015654A5F003AC9BF /* LocationManager.m in Sources */,
 				0A23A29F15658CA200B32392 /* KMMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +376,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AED2101155A99B900BBDAB4 /* LocationDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,14 +399,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0AED20E5155A99B900BBDAB4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0AED20FC155A99B900BBDAB4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AED20FD155A99B900BBDAB4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

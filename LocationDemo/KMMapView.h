@@ -3,7 +3,7 @@
 //  LocationDemo
 //
 //  Created by Kevin McMahon on 5/17/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 Kevin McMahon. All rights reserved.
 //
 
 #import "RMMapView.h"
