@@ -11,10 +11,6 @@
 
 @implementation MapViewController
 
-@synthesize mapView = _mapView;
-@synthesize locationManager = _locationManager;
-@synthesize label = _label;
-
 - (id)init {
     self = [super init];
     if (self) {
@@ -44,8 +40,11 @@
     zoomLocation.latitude = 41.88209;
     zoomLocation.longitude = -87.62784;
     
-    _mapView = [[KMMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 400) andCoordinate:zoomLocation];
-
+    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 400)];
+    [_mapView setRegion:MKCoordinateRegionMakeWithDistance(zoomLocation, 400, 400) animated:YES];
+    [_mapView setCenterCoordinate:zoomLocation];
+    [_mapView setShowsUserLocation:YES];
+    
     _label = [[UILabel alloc] initWithFrame:CGRectMake(20, 419, 280, 21)];
     _label.backgroundColor = [UIColor clearColor];
     _label.textColor = [UIColor whiteColor];
@@ -84,12 +83,6 @@
     [self.view addSubview:self.label];
 }
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    self.label = nil;
-    self.mapView = nil;
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
@@ -106,6 +99,7 @@
 - (void)registerRegions {
 
     LogDebug(@"Number of regions monitored : %d",[self.locationManager.monitoredRegions count]);
+
     for(CLRegion *region in self.locationManager.monitoredRegions) {
         LogDebug(@"%@",region.identifier);
     }
@@ -119,7 +113,7 @@
     CLRegion *beanRegion = [[CLRegion alloc] initCircularRegionWithCenter:theBean
                                                                    radius:10.0
                                                                identifier:@"Cloud Gate"];
-//    [self.locationManager startMonitoringForRegion:beanRegion];
+    [self.locationManager startMonitoringForRegion:beanRegion];
 
     CLLocationCoordinate2D theFountain = CLLocationCoordinate2DMake(41.88148, -87.62373);
     CLRegion *fountainRegion = [[CLRegion alloc] initCircularRegionWithCenter:theFountain
@@ -162,8 +156,6 @@
            fromLocation:(CLLocation *)oldLocation {
 
     _label.text = [NSString stringWithFormat:@"%f, %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude];
-    
-    
 
 //    for(CLRegion *region in manager.monitoredRegions) {
 //        if ([region containsCoordinate:newLocation.coordinate] && ![region containsCoordinate:oldLocation.coordinate]) {

@@ -13,14 +13,7 @@
     MapViewController *mvc;
 }
 
-@synthesize window = _window;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    if (getenv("NSZombieEnabled"))
-        NSLog(@"NSZombieEnabled!");
-    else if (getenv("NSAutoreleaseFreedObjectCheckEnabled"))
-        NSLog(@"NSAutoreleaseFreedObjectCheckEnabled enabled!");
 
     id location = [launchOptions valueForKey:UIApplicationLaunchOptionsLocationKey];
     if (location) {

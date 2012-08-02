@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2162B51567709D001F88C6 /* Icon@2x.png */; };
 		0A2162B8156770AF001F88C6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2162B7156770AF001F88C6 /* Icon.png */; };
-		0A23A29F15658CA200B32392 /* KMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A29E15658CA200B32392 /* KMMapView.m */; };
 		0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A509F87155A9CC400D6F3F5 /* MapViewController.m */; };
 		0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */; };
 		0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */; };
-		0A5A8B1815640328003AC9BF /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1115640315003AC9BF /* libMapView.a */; };
 		0A5A8B1B15640332003AC9BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1915640331003AC9BF /* libsqlite3.dylib */; };
 		0A5A8B1C15640332003AC9BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1A15640331003AC9BF /* QuartzCore.framework */; };
 		0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1D15640337003AC9BF /* libz.dylib */; };
@@ -22,6 +20,8 @@
 		0A7C7F5D1565F67B00A9017A /* ChicagoHome.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */; };
 		0A7C7F5F1565F80F00A9017A /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C7F5E1565F80F00A9017A /* loading.png */; };
 		0A86A4301561498400435C0D /* Chicago.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A86A42F1561498400435C0D /* Chicago.gpx */; };
+		0AC807FB15C383E200726889 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC807F915C383E200726889 /* Default.png */; };
+		0AC807FC15C383E200726889 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC807FA15C383E200726889 /* Default@2x.png */; };
 		0AC8C64D1563572900E64403 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64B1563572900E64403 /* background.png */; };
 		0AC8C64E1563572900E64403 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64C1563572900E64403 /* background@2x.png */; };
 		0AED20DC155A99B900BBDAB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DB155A99B900BBDAB4 /* UIKit.framework */; };
@@ -30,53 +30,16 @@
 		0AED20E6155A99B900BBDAB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AED20E4155A99B900BBDAB4 /* InfoPlist.strings */; };
 		0AED20E8155A99B900BBDAB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AED20E7155A99B900BBDAB4 /* main.m */; };
 		0AED20EC155A99B900BBDAB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AED20EB155A99B900BBDAB4 /* AppDelegate.m */; };
-		0AED20F4155A99B900BBDAB4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */; };
-		0AED20F5155A99B900BBDAB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DB155A99B900BBDAB4 /* UIKit.framework */; };
-		0AED20F6155A99B900BBDAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DD155A99B900BBDAB4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A5A8B1015640315003AC9BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 17F31EFA1331050A00122B16;
-			remoteInfo = MapView;
-		};
-		0A5A8B1215640315003AC9BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
-			remoteInfo = "Unit Tests";
-		};
-		0A5A8B161564031C003AC9BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
-			remoteInfo = MapView;
-		};
-		0AED20F7155A99B900BBDAB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AED20CE155A99B900BBDAB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AED20D6155A99B900BBDAB4;
-			remoteInfo = LocationDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A2162B51567709D001F88C6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0A2162B7156770AF001F88C6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		0A23A29D15658CA200B32392 /* KMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMapView.h; sourceTree = "<group>"; };
-		0A23A29E15658CA200B32392 /* KMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMapView.m; sourceTree = "<group>"; };
 		0A509F86155A9CC400D6F3F5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0A509F87155A9CC400D6F3F5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0A52D3D0155DB33A00FE27DF /* MilleniumPark.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MilleniumPark.gpx; path = GPX/MilleniumPark.gpx; sourceTree = "<group>"; };
-		0A5A8B0115640315003AC9BF /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "Vendor/mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		0A5A8B1915640331003AC9BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0A5A8B1A15640331003AC9BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A5A8B1D15640337003AC9BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -85,6 +48,8 @@
 		0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ChicagoHome.gpx; path = GPX/ChicagoHome.gpx; sourceTree = "<group>"; };
 		0A7C7F5E1565F80F00A9017A /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = LocationDemo/Images/loading.png; sourceTree = "<group>"; };
 		0A86A42F1561498400435C0D /* Chicago.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Chicago.gpx; path = GPX/Chicago.gpx; sourceTree = "<group>"; };
+		0AC807F915C383E200726889 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = LocationDemo/Images/Default.png; sourceTree = "<group>"; };
+		0AC807FA15C383E200726889 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "LocationDemo/Images/Default@2x.png"; sourceTree = "<group>"; };
 		0AC8C64B1563572900E64403 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = LocationDemo/Images/background.png; sourceTree = "<group>"; };
 		0AC8C64C1563572900E64403 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "LocationDemo/Images/background@2x.png"; sourceTree = "<group>"; };
 		0AED20D7155A99B900BBDAB4 /* LocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +62,6 @@
 		0AED20E9155A99B900BBDAB4 /* LocationDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationDemo-Prefix.pch"; sourceTree = "<group>"; };
 		0AED20EA155A99B900BBDAB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AED20EB155A99B900BBDAB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AED20F2155A99B900BBDAB4 /* LocationDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0AED210A155A99E900BBDAB4 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +74,6 @@
 				0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */,
 				0A5A8B1B15640332003AC9BF /* libsqlite3.dylib in Frameworks */,
 				0A5A8B1C15640332003AC9BF /* QuartzCore.framework in Frameworks */,
-				0A5A8B1815640328003AC9BF /* libMapView.a in Frameworks */,
 				0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */,
 				0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */,
 				0AED20DC155A99B900BBDAB4 /* UIKit.framework in Frameworks */,
@@ -119,31 +82,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AED20EE155A99B900BBDAB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AED20F4155A99B900BBDAB4 /* SenTestingKit.framework in Frameworks */,
-				0AED20F5155A99B900BBDAB4 /* UIKit.framework in Frameworks */,
-				0AED20F6155A99B900BBDAB4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A5A8B0215640315003AC9BF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A5A8B1115640315003AC9BF /* libMapView.a */,
-				0A5A8B1315640315003AC9BF /* RM Unit Tests.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0A86A42B156137C400435C0D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0AC807F915C383E200726889 /* Default.png */,
+				0AC807FA15C383E200726889 /* Default@2x.png */,
 				0A7C7F5E1565F80F00A9017A /* loading.png */,
 				0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */,
 				0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */,
@@ -168,7 +114,6 @@
 			children = (
 				0A2162B7156770AF001F88C6 /* Icon.png */,
 				0A2162B51567709D001F88C6 /* Icon@2x.png */,
-				0A5A8B0115640315003AC9BF /* MapView.xcodeproj */,
 				0A86A42D1561470900435C0D /* GPX */,
 				0A86A42B156137C400435C0D /* Images */,
 				0AED20E1155A99B900BBDAB4 /* LocationDemo */,
@@ -181,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				0AED20D7155A99B900BBDAB4 /* LocationDemo.app */,
-				0AED20F2155A99B900BBDAB4 /* LocationDemoTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,8 +155,6 @@
 				0AED210A155A99E900BBDAB4 /* Macros.h */,
 				0A509F86155A9CC400D6F3F5 /* MapViewController.h */,
 				0A509F87155A9CC400D6F3F5 /* MapViewController.m */,
-				0A23A29D15658CA200B32392 /* KMMapView.h */,
-				0A23A29E15658CA200B32392 /* KMMapView.m */,
 			);
 			path = LocationDemo;
 			sourceTree = "<group>";
@@ -242,31 +184,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				0A5A8B171564031C003AC9BF /* PBXTargetDependency */,
 			);
 			name = LocationDemo;
 			productName = LocationDemo;
 			productReference = 0AED20D7155A99B900BBDAB4 /* LocationDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0AED20F1155A99B900BBDAB4 /* LocationDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AED2107155A99B900BBDAB4 /* Build configuration list for PBXNativeTarget "LocationDemoTests" */;
-			buildPhases = (
-				0AED20ED155A99B900BBDAB4 /* Sources */,
-				0AED20EE155A99B900BBDAB4 /* Frameworks */,
-				0AED20EF155A99B900BBDAB4 /* Resources */,
-				0AED20F0155A99B900BBDAB4 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AED20F8155A99B900BBDAB4 /* PBXTargetDependency */,
-			);
-			name = LocationDemoTests;
-			productName = LocationDemoTests;
-			productReference = 0AED20F2155A99B900BBDAB4 /* LocationDemoTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -286,36 +208,12 @@
 			mainGroup = 0AED20CC155A99B900BBDAB4;
 			productRefGroup = 0AED20D8155A99B900BBDAB4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0A5A8B0215640315003AC9BF /* Products */;
-					ProjectRef = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0AED20D6155A99B900BBDAB4 /* LocationDemo */,
-				0AED20F1155A99B900BBDAB4 /* LocationDemoTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0A5A8B1115640315003AC9BF /* libMapView.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMapView.a;
-			remoteRef = 0A5A8B1015640315003AC9BF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0A5A8B1315640315003AC9BF /* RM Unit Tests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "RM Unit Tests.app";
-			remoteRef = 0A5A8B1215640315003AC9BF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0AED20D5155A99B900BBDAB4 /* Resources */ = {
@@ -332,33 +230,12 @@
 				0A7C7F5F1565F80F00A9017A /* loading.png in Resources */,
 				0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */,
 				0A2162B8156770AF001F88C6 /* Icon.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AED20EF155A99B900BBDAB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0AC807FB15C383E200726889 /* Default.png in Resources */,
+				0AC807FC15C383E200726889 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0AED20F0155A99B900BBDAB4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AED20D3155A99B900BBDAB4 /* Sources */ = {
@@ -368,31 +245,10 @@
 				0AED20E8155A99B900BBDAB4 /* main.m in Sources */,
 				0AED20EC155A99B900BBDAB4 /* AppDelegate.m in Sources */,
 				0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */,
-				0A23A29F15658CA200B32392 /* KMMapView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AED20ED155A99B900BBDAB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A5A8B171564031C003AC9BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MapView;
-			targetProxy = 0A5A8B161564031C003AC9BF /* PBXContainerItemProxy */;
-		};
-		0AED20F8155A99B900BBDAB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AED20D6155A99B900BBDAB4 /* LocationDemo */;
-			targetProxy = 0AED20F7155A99B900BBDAB4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0AED20E4155A99B900BBDAB4 /* InfoPlist.strings */ = {
@@ -477,40 +333,6 @@
 			};
 			name = Release;
 		};
-		0AED2108155A99B900BBDAB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocationDemo.app/LocationDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LocationDemo/LocationDemo-Prefix.pch";
-				INFOPLIST_FILE = "LocationDemoTests/LocationDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		0AED2109155A99B900BBDAB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LocationDemo.app/LocationDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LocationDemo/LocationDemo-Prefix.pch";
-				INFOPLIST_FILE = "LocationDemoTests/LocationDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -528,15 +350,6 @@
 			buildConfigurations = (
 				0AED2105155A99B900BBDAB4 /* Debug */,
 				0AED2106155A99B900BBDAB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AED2107155A99B900BBDAB4 /* Build configuration list for PBXNativeTarget "LocationDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AED2108155A99B900BBDAB4 /* Debug */,
-				0AED2109155A99B900BBDAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
