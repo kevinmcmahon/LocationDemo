@@ -30,7 +30,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     mvc = [[MapViewController alloc] init];
-    [self.window addSubview:mvc.view];
+    
+    self.window.rootViewController = mvc;
     [self.window makeKeyAndVisible];
     return YES;
 }

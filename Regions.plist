@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Regions</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>The Bean</string>
+			<key>latitude</key>
+			<real>41.882669</real>
+			<key>longitude</key>
+			<real>-87.62329699999999</real>
+			<key>radius</key>
+			<integer>10</integer>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Crown Fountain</string>
+			<key>latitude</key>
+			<real>41.88148</real>
+			<key>longitude</key>
+			<real>-87.62372999999999</real>
+			<key>radius</key>
+			<integer>100</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

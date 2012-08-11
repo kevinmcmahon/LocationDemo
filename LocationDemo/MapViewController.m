@@ -8,12 +8,12 @@
 
 #import "MapViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "RegionsViewController.h"
+
+#define MILE_IN_METERS 1609
 
 @implementation MapViewController
-
-@synthesize mapView = _mapView;
-@synthesize locationManager = _locationManager;
-@synthesize label = _label;
 
 - (id)init {
     self = [super init];
@@ -40,27 +40,29 @@
 }
 
 - (void)initialize {
-    CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 41.88209;
-    zoomLocation.longitude = -87.62784;
-    
-    _mapView = [[KMMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 400) andCoordinate:zoomLocation];
+    _mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
 
     _label = [[UILabel alloc] initWithFrame:CGRectMake(20, 419, 280, 21)];
     _label.backgroundColor = [UIColor clearColor];
-    _label.textColor = [UIColor whiteColor];
+    _label.textColor = [UIColor blackColor];
+    _label.shadowColor = [UIColor lightGrayColor];
+    _label.shadowOffset = CGSizeMake(0, 2.0);
     _label.textAlignment = UITextAlignmentCenter;
     _label.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:24.0];
     
+    _button = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    _button.frame = CGRectMake(260, 10, 40, 40);
+    
     _locationManager = [[CLLocationManager alloc] init];
-    _locationManager.distanceFilter = 10.0;
+    _locationManager.distanceFilter = kCLDistanceFilterNone;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     _locationManager.purpose = @"CCC 12 : Please let me track you!";
+    _locationManager.delegate = self;
 }
 
 - (void)initLocationManager {
 
-    self.locationManager.delegate = self;
+//    self.locationManager.delegate = self;
 
     if ([CLLocationManager locationServicesEnabled]) {
         LogDebug(@"Location services enabled.");
@@ -70,18 +72,27 @@
             [self registerRegions];
         }
 
-        [self.locationManager startUpdatingLocation];
+        [self.locationManager startMonitoringSignificantLocationChanges];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]]];
 
     [self initLocationManager];
+   
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = 41.88209;
+    zoomLocation.longitude = -87.62784;
+    
+    self.mapView.region = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*1609, 0.5*1609);
+    self.mapView.showsUserLocation = YES;
+    
+    [self.button addTarget:self action:@selector(showRegionInfo) forControlEvents:UIControlEventTouchUpInside];
 
+    [self.mapView addSubview:self.button];
+    [self.mapView addSubview:self.label];
     [self.view addSubview:self.mapView];
-    [self.view addSubview:self.label];
 }
 
 - (void)viewDidUnload {
@@ -92,6 +103,12 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void) showRegionInfo {
+    RegionsViewController *rvc = [[RegionsViewController alloc]init];
+    rvc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:rvc animated:YES];
 }
 
 - (void) showAlert:(NSString *)alertText forRegion:(NSString *)regionIdentifier {
@@ -117,13 +134,13 @@
 
     CLLocationCoordinate2D theBean = CLLocationCoordinate2DMake(41.882669, -87.623297);
     CLRegion *beanRegion = [[CLRegion alloc] initCircularRegionWithCenter:theBean
-                                                                   radius:10.0
+                                                                   radius:25.0f
                                                                identifier:@"Cloud Gate"];
-//    [self.locationManager startMonitoringForRegion:beanRegion];
+    [self.locationManager startMonitoringForRegion:beanRegion];
 
     CLLocationCoordinate2D theFountain = CLLocationCoordinate2DMake(41.88148, -87.62373);
     CLRegion *fountainRegion = [[CLRegion alloc] initCircularRegionWithCenter:theFountain
-                                                                       radius:100.0
+                                                                       radius:25.0f
                                                                    identifier:@"Crown Fountain"];
     [self.locationManager startMonitoringForRegion:fountainRegion];
 
@@ -160,10 +177,10 @@
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation {
-
+    
     _label.text = [NSString stringWithFormat:@"%f, %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude];
     
-    
+    self.mapView.region = MKCoordinateRegionMakeWithDistance(newLocation.coordinate, 0.5*MILE_IN_METERS, 0.5*MILE_IN_METERS);
 
 //    for(CLRegion *region in manager.monitoredRegions) {
 //        if ([region containsCoordinate:newLocation.coordinate] && ![region containsCoordinate:oldLocation.coordinate]) {

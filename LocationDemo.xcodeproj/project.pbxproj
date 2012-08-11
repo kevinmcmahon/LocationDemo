@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2162B51567709D001F88C6 /* Icon@2x.png */; };
 		0A2162B8156770AF001F88C6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A2162B7156770AF001F88C6 /* Icon.png */; };
-		0A23A29F15658CA200B32392 /* KMMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23A29E15658CA200B32392 /* KMMapView.m */; };
 		0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A509F87155A9CC400D6F3F5 /* MapViewController.m */; };
 		0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */; };
 		0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */; };
-		0A5A8B1815640328003AC9BF /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1115640315003AC9BF /* libMapView.a */; };
 		0A5A8B1B15640332003AC9BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1915640331003AC9BF /* libsqlite3.dylib */; };
 		0A5A8B1C15640332003AC9BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1A15640331003AC9BF /* QuartzCore.framework */; };
 		0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1D15640337003AC9BF /* libz.dylib */; };
@@ -24,6 +22,7 @@
 		0A86A4301561498400435C0D /* Chicago.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A86A42F1561498400435C0D /* Chicago.gpx */; };
 		0AC8C64D1563572900E64403 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64B1563572900E64403 /* background.png */; };
 		0AC8C64E1563572900E64403 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AC8C64C1563572900E64403 /* background@2x.png */; };
+		0ADA927F1572B47F003A6D1F /* RegionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA927E1572B47F003A6D1F /* RegionsViewController.m */; };
 		0AED20DC155A99B900BBDAB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DB155A99B900BBDAB4 /* UIKit.framework */; };
 		0AED20DE155A99B900BBDAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DD155A99B900BBDAB4 /* Foundation.framework */; };
 		0AED20E0155A99B900BBDAB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DF155A99B900BBDAB4 /* CoreGraphics.framework */; };
@@ -33,30 +32,10 @@
 		0AED20F4155A99B900BBDAB4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */; };
 		0AED20F5155A99B900BBDAB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DB155A99B900BBDAB4 /* UIKit.framework */; };
 		0AED20F6155A99B900BBDAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AED20DD155A99B900BBDAB4 /* Foundation.framework */; };
+		0AF05E011572B82B00E6EB96 /* Regions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF05E001572B82B00E6EB96 /* Regions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A5A8B1015640315003AC9BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 17F31EFA1331050A00122B16;
-			remoteInfo = MapView;
-		};
-		0A5A8B1215640315003AC9BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
-			remoteInfo = "Unit Tests";
-		};
-		0A5A8B161564031C003AC9BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
-			remoteInfo = MapView;
-		};
 		0AED20F7155A99B900BBDAB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0AED20CE155A99B900BBDAB4 /* Project object */;
@@ -69,14 +48,11 @@
 /* Begin PBXFileReference section */
 		0A2162B51567709D001F88C6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		0A2162B7156770AF001F88C6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		0A23A29D15658CA200B32392 /* KMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMapView.h; sourceTree = "<group>"; };
-		0A23A29E15658CA200B32392 /* KMMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMapView.m; sourceTree = "<group>"; };
 		0A509F86155A9CC400D6F3F5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0A509F87155A9CC400D6F3F5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		0A509F8A155A9E9E00D6F3F5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A509F92155AAAC300D6F3F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0A52D3D0155DB33A00FE27DF /* MilleniumPark.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MilleniumPark.gpx; path = GPX/MilleniumPark.gpx; sourceTree = "<group>"; };
-		0A5A8B0115640315003AC9BF /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "Vendor/mapbox-ios-sdk/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		0A5A8B1915640331003AC9BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0A5A8B1A15640331003AC9BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A5A8B1D15640337003AC9BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -87,6 +63,8 @@
 		0A86A42F1561498400435C0D /* Chicago.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Chicago.gpx; path = GPX/Chicago.gpx; sourceTree = "<group>"; };
 		0AC8C64B1563572900E64403 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = LocationDemo/Images/background.png; sourceTree = "<group>"; };
 		0AC8C64C1563572900E64403 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "LocationDemo/Images/background@2x.png"; sourceTree = "<group>"; };
+		0ADA927D1572B47F003A6D1F /* RegionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionsViewController.h; sourceTree = "<group>"; };
+		0ADA927E1572B47F003A6D1F /* RegionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionsViewController.m; sourceTree = "<group>"; };
 		0AED20D7155A99B900BBDAB4 /* LocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED20DB155A99B900BBDAB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AED20DD155A99B900BBDAB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +78,7 @@
 		0AED20F2155A99B900BBDAB4 /* LocationDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AED20F3155A99B900BBDAB4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0AED210A155A99E900BBDAB4 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		0AF05E001572B82B00E6EB96 /* Regions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Regions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +89,6 @@
 				0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */,
 				0A5A8B1B15640332003AC9BF /* libsqlite3.dylib in Frameworks */,
 				0A5A8B1C15640332003AC9BF /* QuartzCore.framework in Frameworks */,
-				0A5A8B1815640328003AC9BF /* libMapView.a in Frameworks */,
 				0A509F94155AAAEF00D6F3F5 /* CoreLocation.framework in Frameworks */,
 				0A509F8B155A9E9E00D6F3F5 /* MapKit.framework in Frameworks */,
 				0AED20DC155A99B900BBDAB4 /* UIKit.framework in Frameworks */,
@@ -132,15 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A5A8B0215640315003AC9BF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A5A8B1115640315003AC9BF /* libMapView.a */,
-				0A5A8B1315640315003AC9BF /* RM Unit Tests.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0A86A42B156137C400435C0D /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,9 +135,9 @@
 		0AED20CC155A99B900BBDAB4 = {
 			isa = PBXGroup;
 			children = (
+				0AF05E001572B82B00E6EB96 /* Regions.plist */,
 				0A2162B7156770AF001F88C6 /* Icon.png */,
 				0A2162B51567709D001F88C6 /* Icon@2x.png */,
-				0A5A8B0115640315003AC9BF /* MapView.xcodeproj */,
 				0A86A42D1561470900435C0D /* GPX */,
 				0A86A42B156137C400435C0D /* Images */,
 				0AED20E1155A99B900BBDAB4 /* LocationDemo */,
@@ -211,8 +180,8 @@
 				0AED210A155A99E900BBDAB4 /* Macros.h */,
 				0A509F86155A9CC400D6F3F5 /* MapViewController.h */,
 				0A509F87155A9CC400D6F3F5 /* MapViewController.m */,
-				0A23A29D15658CA200B32392 /* KMMapView.h */,
-				0A23A29E15658CA200B32392 /* KMMapView.m */,
+				0ADA927D1572B47F003A6D1F /* RegionsViewController.h */,
+				0ADA927E1572B47F003A6D1F /* RegionsViewController.m */,
 			);
 			path = LocationDemo;
 			sourceTree = "<group>";
@@ -242,7 +211,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0A5A8B171564031C003AC9BF /* PBXTargetDependency */,
 			);
 			name = LocationDemo;
 			productName = LocationDemo;
@@ -286,12 +254,6 @@
 			mainGroup = 0AED20CC155A99B900BBDAB4;
 			productRefGroup = 0AED20D8155A99B900BBDAB4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0A5A8B0215640315003AC9BF /* Products */;
-					ProjectRef = 0A5A8B0115640315003AC9BF /* MapView.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0AED20D6155A99B900BBDAB4 /* LocationDemo */,
@@ -299,23 +261,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0A5A8B1115640315003AC9BF /* libMapView.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMapView.a;
-			remoteRef = 0A5A8B1015640315003AC9BF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0A5A8B1315640315003AC9BF /* RM Unit Tests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "RM Unit Tests.app";
-			remoteRef = 0A5A8B1215640315003AC9BF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0AED20D5155A99B900BBDAB4 /* Resources */ = {
@@ -332,6 +277,7 @@
 				0A7C7F5F1565F80F00A9017A /* loading.png in Resources */,
 				0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */,
 				0A2162B8156770AF001F88C6 /* Icon.png in Resources */,
+				0AF05E011572B82B00E6EB96 /* Regions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +314,7 @@
 				0AED20E8155A99B900BBDAB4 /* main.m in Sources */,
 				0AED20EC155A99B900BBDAB4 /* AppDelegate.m in Sources */,
 				0A509F88155A9CC400D6F3F5 /* MapViewController.m in Sources */,
-				0A23A29F15658CA200B32392 /* KMMapView.m in Sources */,
+				0ADA927F1572B47F003A6D1F /* RegionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,11 +328,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A5A8B171564031C003AC9BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MapView;
-			targetProxy = 0A5A8B161564031C003AC9BF /* PBXContainerItemProxy */;
-		};
 		0AED20F8155A99B900BBDAB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0AED20D6155A99B900BBDAB4 /* LocationDemo */;
@@ -456,7 +397,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationDemo/LocationDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/mapbox-ios-sdk/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "LocationDemo/LocationDemo-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,7 +410,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationDemo/LocationDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Vendor/mapbox-ios-sdk/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "LocationDemo/LocationDemo-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
