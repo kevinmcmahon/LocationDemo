@@ -15,8 +15,6 @@
 		0A5A8B1B15640332003AC9BF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1915640331003AC9BF /* libsqlite3.dylib */; };
 		0A5A8B1C15640332003AC9BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1A15640331003AC9BF /* QuartzCore.framework */; };
 		0A5A8B1E15640337003AC9BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A8B1D15640337003AC9BF /* libz.dylib */; };
-		0A5A8B2C15652BC1003AC9BF /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */; };
-		0A5A8B2D15652BC1003AC9BF /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */; };
 		0A7C7F5D1565F67B00A9017A /* ChicagoHome.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */; };
 		0A7C7F5F1565F80F00A9017A /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7C7F5E1565F80F00A9017A /* loading.png */; };
 		0A86A4301561498400435C0D /* Chicago.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0A86A42F1561498400435C0D /* Chicago.gpx */; };
@@ -43,8 +41,6 @@
 		0A5A8B1915640331003AC9BF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0A5A8B1A15640331003AC9BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A5A8B1D15640337003AC9BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TrackingDot.png; path = LocationDemo/Images/TrackingDot.png; sourceTree = "<group>"; };
-		0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TrackingDot@2x.png"; path = "LocationDemo/Images/TrackingDot@2x.png"; sourceTree = "<group>"; };
 		0A7C7F5C1565F67B00A9017A /* ChicagoHome.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ChicagoHome.gpx; path = GPX/ChicagoHome.gpx; sourceTree = "<group>"; };
 		0A7C7F5E1565F80F00A9017A /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = LocationDemo/Images/loading.png; sourceTree = "<group>"; };
 		0A86A42F1561498400435C0D /* Chicago.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Chicago.gpx; path = GPX/Chicago.gpx; sourceTree = "<group>"; };
@@ -91,8 +87,6 @@
 				0AC807F915C383E200726889 /* Default.png */,
 				0AC807FA15C383E200726889 /* Default@2x.png */,
 				0A7C7F5E1565F80F00A9017A /* loading.png */,
-				0A5A8B2A15652BC1003AC9BF /* TrackingDot.png */,
-				0A5A8B2B15652BC1003AC9BF /* TrackingDot@2x.png */,
 				0AC8C64B1563572900E64403 /* background.png */,
 				0AC8C64C1563572900E64403 /* background@2x.png */,
 			);
@@ -224,8 +218,6 @@
 				0A86A4301561498400435C0D /* Chicago.gpx in Resources */,
 				0AC8C64D1563572900E64403 /* background.png in Resources */,
 				0AC8C64E1563572900E64403 /* background@2x.png in Resources */,
-				0A5A8B2C15652BC1003AC9BF /* TrackingDot.png in Resources */,
-				0A5A8B2D15652BC1003AC9BF /* TrackingDot@2x.png in Resources */,
 				0A7C7F5D1565F67B00A9017A /* ChicagoHome.gpx in Resources */,
 				0A7C7F5F1565F80F00A9017A /* loading.png in Resources */,
 				0A2162B61567709D001F88C6 /* Icon@2x.png in Resources */,
